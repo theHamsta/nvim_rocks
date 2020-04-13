@@ -47,3 +47,12 @@ print(vim.inspect(nvim_rocks.list(simple)))
 -- Remove rock
 nvim_rocks.remove('lua-cjson')
 ```
+
+## Alternatives
+
+If you want to install just pure Lua packages you might also install them manually:
+
+```vim
+    Plug 'Yonaba/30log', {'do': 'mkdir -p lua && cp *.lua lua'}
+    Plug 'lua-stdlib/lua-stdlib', {'do': 'cp -r lib lua'}
+```
