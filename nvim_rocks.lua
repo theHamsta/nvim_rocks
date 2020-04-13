@@ -31,10 +31,16 @@ local rock_print = function(text)
    print('🤘'..text)
 end
 
+local print_list = function(list) 
+    for _, line in ipairs(list) do 
+        print(line)
+    end
+end
+
 nvim_rocks.install = function(name)
     rock_print('Trying to install "'.. name .. '"')
     result = vim.fn.systemlist('source '..plugin_path()..'/bin/activate && luarocks install '..name)
-    rock_print(vim.inspect(result))
+    print_list(result)
    
 	-- copy shared objects to lua path that neovim finds them
     vim.fn.systemlist("ln -s "..plugin_path().."/lib/lua/5.1/*.so "..plugin_path().."/lua")
@@ -43,7 +49,7 @@ end
 nvim_rocks.remove = function(name)
     rock_print('Trying to remove "'.. name .. '"')
     result = vim.fn.systemlist('source '..plugin_path()..'/bin/activate && luarocks remove '..name)
-    rock_print(vim.inspect(result))
+    print_list(result)
 
 	-- Update links to shared objects
     vim.fn.systemlist("rm "..plugin_path().."/lua/*.so")
