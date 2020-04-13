@@ -1,6 +1,6 @@
 # nvim_rocks 🤘
 
-Install [luarock](https://luarocks.org/) packages for Neovim's built in Lua interpreter.
+Install [luarock](https://luarocks.org/) packages for Neovim's built-in Lua interpreter.
 
 ## Installation
 
