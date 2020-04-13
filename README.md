@@ -20,7 +20,7 @@ I am currently using the latest nightly of Neovim.
 local nvim_rocks = require'nvim_rocks'
 
 -- Force installation of rock
-nvim_rocks.ensure_installed('30log')
+nvim_rocks.install('30log')
 
 -- Ensure that certain rocks are installed
 nvim_rocks.ensure_installed('lua-cjson')
