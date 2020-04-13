@@ -18,10 +18,6 @@ I am currently using the latest nightly of Neovim.
 ```lua
 local nvim_rocks = require'nvim_rocks'
 
-print(vim.inspect(nvim_rocks))
-
-print(vim.inspect(nvim_rocks.list()))
-
 -- Force installation of rock
 nvim_rocks.ensure_installed('30log')
 
