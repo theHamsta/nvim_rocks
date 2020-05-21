@@ -48,7 +48,7 @@ nvim_rocks.remove('lua-cjson')
 There's also two commands for install/uninstall
 
  * `NvimRocksInstall <package>`
- * `NvimRocksUninstall <package>`
+ * `NvimRocksRemove <package>`
 
 ## Alternatives
 
