@@ -25,7 +25,7 @@ nvim_rocks.install('30log')
 -- Ensure that certain rocks are installed
 nvim_rocks.ensure_installed('lua-cjson')
 nvim_rocks.ensure_installed({'lua-cjson', 'stdlib'})
-nvim_rocks.ensure_installed('stdlib')
+nvim_rocks.ensure_installed('fun') -- nice functional programming for LuaJIT!
 
 -- require stuff from binary rock
 local cjson = require "cjson"
@@ -44,6 +44,11 @@ print(vim.inspect(nvim_rocks.list(simple)))
 -- Remove rock
 nvim_rocks.remove('lua-cjson')
 ```
+
+There's also two commands for install/uninstall
+
+ * `NvimRocksInstall <package>`
+ * `NvimRocksUninstall <package>`
 
 ## Alternatives
 
