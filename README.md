@@ -44,10 +44,11 @@ print(vim.inspect(nvim_rocks.list(simple)))
 nvim_rocks.remove('lua-cjson')
 ```
 
-There's also two commands for install/uninstall
+There's also three commands for install/uninstall and listing the installed packages:
 
  * `NvimRocksInstall <package>`
  * `NvimRocksRemove <package>`
+ * `NvimRocksList`
 
 ## Alternatives
 
