@@ -6,7 +6,6 @@ Install [luarock](https://luarocks.org/) packages for Neovim's built-in Lua inte
 
 I use [hererock](https://github.com/luarocks/hererocks) to set up a luajit local enviroment.
 Adapt if you use a different pip binary or you want to use a different luarocks version (latest was not working for me).
-Ensure that hererocks is accessible after user pip installation (e.g. with `~/.local/bin` in `PATH`).
 
 ```vim
     Plug 'theHamsta/nvim_rocks', {'do': 'pip3 install --user hererocks && python3 -mhererocks . -j2.1.0-beta3 -r3.0.0 && cp nvim_rocks.lua lua'}
