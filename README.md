@@ -58,3 +58,6 @@ If you want to install just pure Lua packages you might also install them manual
     Plug 'Yonaba/30log', {'do': 'mkdir -p lua && cp *.lua lua'}
     Plug 'lua-stdlib/lua-stdlib', {'do': 'cp -r lib lua'}
 ```
+
+[plenary.nvim](https://github.com/nvim-lua/plenary.nvim) has improved some ideas from this repo (`plenary.neorocks`).
+I hope that it will become the standard way of installing luarock packages for Neovim!
