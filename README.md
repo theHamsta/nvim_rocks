@@ -4,7 +4,7 @@ Install [luarock](https://luarocks.org/) packages for Neovim's built-in Lua inte
 
 ## Important Note
 
-Functionality of this plugin has been added to plenary.nvim and to https://github.com/wbthomason/packer.nvim. Please use packer.nvim for a maintained version for luarock dependencies!
+Functionality of this plugin has been added to https://github.com/wbthomason/packer.nvim. Please use packer.nvim for a maintained version for luarock dependencies!
 
 ## Installation
 
@@ -62,8 +62,5 @@ If you want to install just pure Lua packages you might also install them manual
     Plug 'Yonaba/30log', {'do': 'mkdir -p lua && cp *.lua lua'}
     Plug 'lua-stdlib/lua-stdlib', {'do': 'cp -r lib lua'}
 ```
-
-[plenary.nvim](https://github.com/nvim-lua/plenary.nvim) has improved some ideas from this repo (`plenary.neorocks`).
-I hope that it will become the standard way of installing luarock packages for Neovim!
 
 Now https://github.com/wbthomason/packer.nvim has luarocks support
