@@ -4,13 +4,31 @@ Install [luarock](https://luarocks.org/) packages for Neovim's built-in Lua inte
 
 ## Important Note
 
-Functionality of this plugin has been added to https://github.com/wbthomason/packer.nvim. Please use packer.nvim for a maintained version for luarock dependencies!
+Functionality of this plugin has been added to https://github.com/wbthomason/packer.nvim. You will not need this plugin
+when you are using packer.nvim.
 
 ## Installation
 
 I use [hererock](https://github.com/luarocks/hererocks) to set up a luajit local enviroment.
 Adapt if you use a different pip binary or you want to use a different luarocks version (latest was not working for me).
 
+If using Lazy.nvim
+```lua
+return {
+  {
+    "theHamsta/nvim_rocks",
+    event = "VeryLazy",
+    build = "pip3 install --user hererocks && python3 -mhererocks . -j2.1.0-beta3 -r3.0.0 && cp nvim_rocks.lua lua",
+    config = function()
+      ---- Add here the packages you want to make sure that they are installed
+      --local nvim_rocks = require "nvim_rocks"
+      --nvim_rocks.ensure_installed "uuid
+    end,
+  },
+}
+```
+
+or for vim-plug
 ```vim
     Plug 'theHamsta/nvim_rocks', {'do': 'pip3 install --user hererocks && python3 -mhererocks . -j2.1.0-beta3 -r3.0.0 && cp nvim_rocks.lua lua'}
 ```
